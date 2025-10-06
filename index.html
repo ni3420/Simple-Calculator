@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+
+    <style>
+        body{
+            margin: 0;
+            width: 0;
+            box-sizing: border-box;
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            border-radius: 20px;
+            background-color: black;
+            height: auto;
+            width: auto;
+            text-align: center;
+            overflow: hidden;
+            
+        }
+        .item{
+
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+        }
+        button{
+            
+            border: none;
+            
+            border-radius: 50%;
+            margin: 10px;
+            font-size: 30px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        
+        }
+        #input{
+            border: none;
+            height: 70px;
+            width: 80%;
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: right;
+            background-color:wheat;
+            
+            
+
+        }
+        #para{
+            color: white;
+            text-align: right;
+        }
+        
+        .fill
+        {
+            background-color:black;
+            padding: 20px;
+        }
+        #opt{
+            color:red;
+        }
+        #main{
+            color: red;
+            background-color: orange;
+            padding: 10px;
+            border-radius: 50%;
+        }
+        button:hover{
+            background-color: rgb(109, 93, 64);
+            transition: .5s;
+        }
+    </style>
+    
+</head>
+<body>
+<div class="content">
+    <div class="fill">
+    <input id="input" type="text"/>
+    <p id="para"></p>
+    </div>
+    <div class="item">
+        
+        <button  id="AC">Ac</button>
+        <button  id="delete" >⏮</button>
+        <button class="button" id="opt">%</button>
+        <button class="button" id="opt">+</button>
+        <button class="button" id="">1</button>
+        <button class="button" id="">2</button>
+        <button class="button" id="">3</button>
+        <button class="button" id="opt">-</button>
+        <button class="button" id="">4</button>
+        <button class="button" id="">5</button>
+        <button class="button" id="">6</button>
+        <button class="button" id="opt">*</button>
+        <button class="button" id="">7</button>
+        <button class="button" id="">8</button>
+        <button class="button" id="">9</button>
+        <button class="button" id="opt">/</button>
+        <button class="button" id="">0</button>
+        <button class="button" id="opt">.</button>
+        
+        <button  id="main">=</button>
+    </div>
+</div>
+
+<script src="index.js">
+</script>
+
+    
+</body>
+</html>
